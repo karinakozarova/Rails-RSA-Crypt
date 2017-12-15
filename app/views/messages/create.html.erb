@@ -1,0 +1,17 @@
+<div style="align-content: center;text-align: center;font-size: 460%">
+		<p > 
+			The URL is: 
+		</p>
+
+		<p> 
+			<% string = "http://privnote.herokuapp.com" %>
+			<%= string+message_path(@message)%>
+		</p>
+
+		<p>
+			For direct link, click here: <br>
+		</p>
+
+		<%= link_to message_path(@message), message_path(@message), data: {confirm: "Click OK to see message" }%>
+
+</div>

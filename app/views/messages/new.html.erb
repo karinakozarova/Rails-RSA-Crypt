@@ -1,0 +1,14 @@
+<%= form_with scope: :messages, local: true do |form| %>
+  <p style = "text-align: center;font-size: 200%"> 
+  		Enter your message here: <br>
+  </p>
+     
+  <div style = "text-align: center">
+  		 <%= form.text_area :text, cols: "150", rows: "30" %>
+  </div>
+
+  <p style = "text-align: center;">
+    <%= form.submit 'Save message', data: { confirm: 'Click ok to confirm creating of message!' } %>
+  </p>
+
+<% end %>
